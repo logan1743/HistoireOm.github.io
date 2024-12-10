@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allez L'om</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logoicon.png">
+</head>
+<body>
+    <header class="navbar">
+        <a href="index.html"><img class="logo" src="images/logo-om.png" alt ="logo OM" /></a>
+        <nav class="nav-liens">
+            <a href="histoire.html" class="nav-item">Les grandes années de l'OM</a>
+            <a href="tapie.html" class="nav-item">Bernard Tapie</a>
+           
+            <div class="inscription-supporter">
+                <a href="inscription.html">
+                    <img src="images/newsletter.png" alt="inscription pour les fans de l'OM"> <!-- Mettre une page menant au formulaire PHP-->
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="contenu-page2">
+        <form action="traitement.php">
+            <fieldset>
+                <legend>Vos données personelles</legend>
+
+                <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom :">
+                </p>
+                <p>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom :">
+                </p>
+                <p>
+                    <label for="datedenaissance">Date de naissance :</label>
+                    <input type="date" name="datedenaissance" id="datedenaissance">
+                </p>
+                <fieldset>
+                    <legend>Lieu de naissance :</legend>
+                    <p>
+                        <label for="seinesaintdenis">Seine-Saint Denis</label>
+                        <input type="radio" name="lieux" id="seinesaintdenis">
+                        <label for="restedumonde">Reste du monde </label>
+                        <input type="radio" name="lieux" id="restedumonde">
+                    </p>
+                </fieldset>
+                <p>
+                    <label for="adressepostale">Adresse postale :</label>
+                    <textarea name="adressepostale" id="adressepostale" rows="2" cols="30"
+                        placeholder="Votre adresse postale :"></textarea>
+                </p>
+                <p>
+                    <label for="codepostal">Code postal :</label>
+                    <input type="number" name="codepostal" id="datedenaissance" placeholder="Votre code postal :">
+                </p>
+                <p>
+                    <label for="adresseelectronique">Adresse électronique :</label>
+                    <input type="email" name="adresseelectronique" id="adresseélectronique"
+                        placeholder="Votre adresse électronique :">
+                </p>
+                <p>
+                    <label for="pagepersonnelle">Page personnelle :</label>
+                    <input type="url" name="pagepersonnelle" id="pagepersonnelle" placeholder="Votre page Web :">
+                </p>
+                <p>
+                    <label for="telephoneportable">Téléphone portable :</label>
+                    <input type="text" name="telephoneportable" id="telephoneportable" placeholder="Votre numéro :">
+                </p>
+                <p>
+                    <label for="semestre">Semestre :</label>
+                    <select name="semestre" id="semestre">
+                        <option value="s1">S1</option>
+                        <option value="s2">S2</option>
+                        <option value="s3">S3</option>
+                        <option value="s4">S4</option>
+
+                    </select>
+                </p>
+                <p>
+                    <label for="niveauhtml">Niveau en HTML :</label>
+                    <input type="range" id="niveauhtml" name="niveauhtml" min="0" max="10">
+                </p>
+                <fieldset>
+                    <legend>Connaissances :</legend>
+                <input type="checkbox" id="html" name="html" value="html">
+                <label for="html">HTML</label>
+                <input type="checkbox" id="css" name="css" value="css">
+                <label for="css">CSS</label>
+                <input type="checkbox" id="formulaires" name="formulaires" value="formulaires">
+                <label for="formulaires">formulaires</label>
+                <input type="checkbox" id="JavaScript" name="JavaScript" value="JavaScript">
+                <label for="JavaScript">JavaScript</label>
+            </fieldset>
+            <p>
+            <input type="submit" value="Envoyer">
+        </p>
+            </fieldset>
+        </form>
+
+
+
+    </main>           
+
+<!-- FOOTER-->
+    <footer class="footer">
+    
+    <h3> A propos</h3>
+    <h3>
+        <a href="https://www.om.fr/fr" >Site de L'olympique de Marseille</a>
+    </h3>
+    </footer>
+</body>

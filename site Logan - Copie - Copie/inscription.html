@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allez L'om</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="icon" type="image/x-icon" href="images/logoicon.png">
+</head>
+
+<body>
+    <header class="navbar"><!-- Navbar-->
+        <a href="index.html"><img class="logo" src="images/logo-om.png" alt="logo OM" /></a>
+        <nav class="nav-liens">
+            <a href="histoire.html" class="nav-item">Les grandes années de l'OM</a>
+            <a href="tapie.html" class="nav-item">Bernard Tapie</a>
+
+            <div class="inscription-supporter">
+                <a href="inscription.html">
+                    <img src="images/newsletter.png" alt="inscription pour les fans de l'OM">
+                    <!-- page menant au formulaire PHP-->
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main class="contenu-page2">
+        <form action="traitement.php" method="POST">
+            <fieldset>
+                <legend>Informations personnelles</legend>
+                <p>
+                    <label for="nom">Nom :</label>
+                    <input type="text" name="nom" id="nom" placeholder="Votre nom" required><!-- nom de l'utilisateur-->
+                </p>
+                <p>
+                    <label for="prenom">Prénom :</label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Votre prénom" required><!-- prénom de l'utilisateur-->
+                </p>
+                <p>
+                    <label for="email">Adresse électronique :</label>
+                    <input type="email" name="email" id="email" placeholder="Votre email" required><!-- email de l'utilisateur-->
+                </p>
+                <p>
+                    <label for="telephone">Téléphone :</label>
+                    <input type="tel" name="telephone" id="telephone" placeholder="Votre numéro de téléphone"><!-- téléphone de l'utilisateur-->
+                </p>
+
+            </fieldset>
+            <fieldset>
+                <legend>Informations complémentaires</legend>
+                <p>
+                    <label for="ville">Ville :</label>
+                    <input type="text" name="ville" id="ville" placeholder="Votre ville"><!-- lieu de résidence de l'utilisateur-->
+                </p>
+                <p>
+                    <label for="message">Pourquoi aimez-vous l'OM ? :</label><!-- raison de l'intêret de l'utilisateur pour l'om-->
+                    <textarea name="message" id="message" rows="4"
+                        placeholder="Partagez votre passion pour l'OM"></textarea>
+                </p>
+            </fieldset>
+            <p>
+                <button type="submit">S'inscrire</button>
+            </p>
+        </form>
+
+
+
+    </main>
+
+    <!-- FOOTER-->
+    <footer class="footer">
+
+        <h3>
+            <a href="https://www.om.fr/fr/13532/13532-groupes-de-supporters">Contact groupe de supporter</a>
+        </h3>
+        <h3>
+            <a href="https://www.om.fr/fr">Site de L'olympique de Marseille</a>
+        </h3>
+        <h3>
+            <a href="https://www.marseille.fr/">Ville de Marseille</a>
+        </h3>
+</body>
